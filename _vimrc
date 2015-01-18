@@ -48,6 +48,8 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'grep.vim'
+
+" Markdown
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'tyru/open-browser.vim'
@@ -58,6 +60,8 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
 
 NeoBundle "slim-template/vim-slim"
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'tpope/vim-rails'
 
 " http://blog.remora.cx/2010/12/vim-ref-with-unite.html
 """"""""""""""""""""""""""""""
