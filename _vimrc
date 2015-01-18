@@ -44,15 +44,20 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Note: You don't set neobundle setting in .gvimrc!
 
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'Townk/vim-autoclose'
+"NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'grep.vim'
+NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'kannokanno/previm'
+NeoBundle 'tyru/open-browser.vim'
 
 " ファイルオープンを便利に
 NeoBundle 'Shougo/unite.vim'
 " Unite.vimで最近使ったファイルを表示できるようにする
 NeoBundle 'Shougo/neomru.vim'
+
+NeoBundle "slim-template/vim-slim"
 
 " http://blog.remora.cx/2010/12/vim-ref-with-unite.html
 """"""""""""""""""""""""""""""
@@ -86,3 +91,5 @@ filetype plugin indent on
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
 NeoBundleCheck
+
+au BufRead,BufNewFile *.md set filetype=markdown
