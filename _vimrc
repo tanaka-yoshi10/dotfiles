@@ -9,11 +9,11 @@ function! InsertDiary()
 endfunction
 
 " ,dで日付を入力する
-map ,d Go<C-D><C-D><C-D><C-D><C-D><CR>---------- <C-R>=strftime("%Y-%m-%d(%a)")<CR> ----------<CR>
+map ,d Go<C-D><C-D><C-D><C-D><C-D><CR># <C-R>=strftime("%Y-%m-%d(%a)")<CR>
 map ,i o<C-R>=strftime("%Y%m%d")<CR><SPACE>
-map ,b o<CR>----------------------------<CR><ESC>
+map ,b o<CR>---<CR><ESC>
 
-map ,h I--- <ESC>A ---<ESC>
+map ,h I## <ESC>
 map ,j o<TAB>[<C-R>=strftime("%Y-%m-%d")<CR> <C-R>=strftime("%H:%M")<CR>]<ESC>
 "map ,t ,n[<C-R>=strftime("%Y-%m-%d")<CR>]
 map ,t I[ ] <ESC>
