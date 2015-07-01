@@ -8,6 +8,11 @@ function! InsertDiary()
 	execute "normal o--- Project ---¥<CR>--- NextAction ---¥<CR>¥<ESC>"
 endfunction
 
+if expand("%:t") =~ ".*\.rb"
+  set tabstop=2
+  set shiftwidth=2
+endif
+
 " ,dで日付を入力する
 map ,d Go<C-D><C-D><C-D><C-D><C-D><CR># <C-R>=strftime("%Y-%m-%d(%a)")<CR>
 map ,i o<C-R>=strftime("%Y%m%d")<CR><SPACE>
@@ -48,6 +53,7 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'grep.vim'
+autocmd QuickFixCmdPost *grep* cwindow
 
 " Markdown
 NeoBundle 'plasticboy/vim-markdown'
